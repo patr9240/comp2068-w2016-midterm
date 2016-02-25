@@ -1,8 +1,9 @@
+    <!-- Filename: contact.ejs, By: Patrick Ross, Website Name: comp2068-w2016-midterm, Description: contact page for the website -->
 <% include partials/header.ejs %>
     <% include partials/navbar.ejs %>
         <main class="container">
             <h1><%= title %> Page</h1>
-            <form>
+            <form action="/">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -16,10 +17,8 @@
                     <input type="file" id="exampleInputFile">
                     <p class="help-block">Example block-level help text here.</p>
                 </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Check me out
-                    </label>
+                <div>
+                <textarea class="form-control" rows="5" id="Message"></textarea>
                 </div>
                 <button type="submit"  href="/" class="btn btn-default">Submit</button>
             </form>
